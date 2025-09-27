@@ -3,7 +3,7 @@ components:
   - components:
     - layout_properties: {width: 94.4444580078125, x: 327.8888931274414, y: 172.7777862548828}
       name: text_box_1
-      properties: {placeholder: 1d6}
+      properties: {placeholder: '', text: 1d6}
       type: TextBox
     - layout_properties: {width: 89.22222137451172, x: 232.4722332432866, y: 175.13889736682177}
       name: label_1

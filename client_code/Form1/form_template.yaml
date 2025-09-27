@@ -1,11 +1,23 @@
 components:
 - components:
   - components:
+    - layout_properties: {width: 94.4444580078125, x: 327.8888931274414, y: 172.7777862548828}
+      name: text_box_1
+      properties: {placeholder: 1d6}
+      type: TextBox
+    - layout_properties: {width: 89.22222137451172, x: 232.4722332432866, y: 175.13889736682177}
+      name: label_1
+      properties: {bold: true, text: 'Dice to roll:'}
+      type: Label
     - event_bindings: {click: button_1_click}
-      layout_properties: {width: 750, x: 0, y: 360}
+      layout_properties: {width: 750, x: 0, y: 233.8263821080327}
       name: button_1
       properties: {text: Roll Dice}
       type: Button
+    - layout_properties: {width: 200, x: 433.31934017688036, y: 176.86803860217333}
+      name: label_2
+      properties: {align: center, bold: true}
+      type: Label
     data_bindings:
     - {code: 'self.item[''canvas''] = "dice"', property: tag, writeback: false}
     event_bindings: {}

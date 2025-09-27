@@ -32,11 +32,28 @@ class Form1(Form1Template):
         "lightIntensity": 0.9,
         "scale": 8,
         "offscreen": True,
+        "onRollComplete": self.update_roll_result,
       }
       self.dice = dice_box(dice_options)
   
       anvil.js.await_promise(self.dice.init())
     
     self.dice.clear()
-    self.dice.roll("1d6")
-    self.dice.show()
+
+    roll_arg = self.text_box_1.text or "1d6"
+    self.label_2.text = ""
+    
+    try:
+      self.dice.roll(roll_arg)
+      self.dice.show()
+    except Exception:
+      self.dice.clear()
+      anvil.alert(f"{roll_arg} is not a valid roll argument")
+
+  def update_roll_result(self, results):
+    #dice_outcomes = results[0]["rolls"]
+    #total = sum(d["value"] for d in dice_outcomes)
+    # anvil.alert(f"{results[0]['value']}")
+    self.label_2.text = results[0]["value"]
+    
+    

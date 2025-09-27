@@ -1,8 +1,9 @@
 allow_embedding: false
 dependencies: []
-name: Tutorial Native JS library
+metadata: {description: A simple dice roller, logo_img: 'asset:rolling_die.png', title: Roll Dice}
+name: Dice Roller (using Native JS)
 native_deps: {head_html: ''}
-package_name: Tutorial_Native_JS_library
+package_name: Dice_Roller__using_Native_JS_
 renamed: true
 runtime_options:
   client_version: '3'

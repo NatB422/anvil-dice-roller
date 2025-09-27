@@ -1,7 +1,17 @@
 /**
  This CSS implements the Material Design 3 look and feel for Anvil apps.
  **/
+#dice-box {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
 
+#dice-box canvas {
+  width: 100%;
+  height: 100%;
+}
 /* Stop panel-cols cutting off drop shadows */
 .anvil-panel-col {
   padding-bottom: 10px;

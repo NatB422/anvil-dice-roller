@@ -2,14 +2,6 @@ unique_ids:
   assets:
     standard-page.html: HDGNUQWLHZLLIRILI6F3SE372E66SFPH
     theme.css: Y4TYBCO23NBSY4NXJM3DQ27TJ2ZNAK2B
-    themes/.gitkeep: '1758974614737926813682008.2062'
-    themes/rust/.gitkeep: '1758974681343335004159577.1791'
-    themes/rust/diffuse-dark.png: '1758974784669150172456163.91394'
-    themes/rust/diffuse-light.png: '1758974778604693010480182.5354'
-    themes/rust/normal.png: '1758974772108923864124600.7274'
-    themes/rust/package.json: '1758974747931743928296279.8579'
-    themes/rust/specular.jpg: '1758974759265871104882563.6184'
-    themes/rust/theme.config.json: '1758974704739278575510807.17834'
   forms:
     Form1: T7O5V7EVFRCNQZJB5K4JW4EUJIX3DSPH
   modules: {}

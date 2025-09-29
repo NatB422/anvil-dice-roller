@@ -48,8 +48,16 @@ components:
   name: navbar_links
   properties: {}
   type: FlowPanel
+- layout_properties: {slot: title}
+  name: label_3
+  properties: {align: center, bold: true, italic: true, text: DIGITAL DICE TRAY}
+  type: Label
+- layout_properties: {slot: top-left-btn}
+  name: image_1
+  properties: {height: '40', source: _/theme/rolling_die.png}
+  type: Image
 container:
   data_bindings: []
-  properties: {background: '', html: '@theme:standard-page.html'}
+  properties: {background: '', html: '@theme:standard-page.html', role: null, visible: true}
   type: HtmlTemplate
 is_package: true

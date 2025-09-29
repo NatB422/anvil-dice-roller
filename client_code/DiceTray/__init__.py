@@ -1,9 +1,11 @@
-from ._anvil_designer import Form1Template
+from ._anvil_designer import DiceTrayTemplate
 from anvil import *
+import anvil.server
 import anvil.js
+from ..DiceResult import multiline_dice_result
 
 
-class Form1(Form1Template):
+class DiceTray(DiceTrayTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -57,14 +59,5 @@ class Form1(Form1Template):
     #dice_outcomes = results[0]["rolls"]
     #total = sum(d["value"] for d in dice_outcomes)
     # anvil.alert(f"{results[0]}")
-    if results[0]["qty"] == 1 and results[0]["modifier"] == 0:
-      self.label_2.text = results[0]["value"]
-    else:
-      self.label_2.text = (
-        ", ".join(str(r["value"]) for r in results[0]["rolls"])
-          + (f"\n + {results[0]['modifier']}" if results[0]['modifier'] else "")
-          + "\n = " + str(results[0]["value"])
-      )
-      
-    
+    self.label_2.text = multiline_dice_result(results[0])
     

@@ -1,30 +1,30 @@
 components:
 - components:
   - components:
-    - layout_properties: {width: 94.4444580078125, x: 327.8888931274414, y: 172.7777862548828}
-      name: text_box_1
-      properties: {placeholder: '', text: 1d6}
-      type: TextBox
-    - layout_properties: {width: 89.22222137451172, x: 232.4722332432866, y: 175.13889736682177}
+    - layout_properties: {width: 89.22222137451172, x: 50.29861111193895, y: 175.63195461779833}
       name: label_1
       properties: {bold: true, text: 'Dice to roll:'}
       type: Label
-    - event_bindings: {click: button_1_click}
-      layout_properties: {width: 750, x: 0, y: 233.8263821080327}
-      name: button_1
-      properties: {text: Roll Dice}
-      type: Button
-    - layout_properties: {width: 200, x: 433.31934017688036, y: 176.86803860217333}
+    - layout_properties: {width: 94.44444274902344, x: 185.7152981236577, y: 169.2708401158452}
+      name: text_box_1
+      properties: {placeholder: '', text: 1d6}
+      type: TextBox
+    - layout_properties: {width: 200, x: 279.5833401158452, y: 171.13195461779833}
       name: label_2
       properties: {align: center, bold: true}
       type: Label
+    - event_bindings: {click: button_1_click}
+      layout_properties: {width: 480, x: 0, y: 206.31945461779833}
+      name: button_1
+      properties: {text: Roll Dice}
+      type: Button
     data_bindings:
     - {code: 'self.item[''canvas''] = "dice"', property: tag, writeback: false}
     - {code: 'self.item[''background'']', property: background, writeback: false}
     event_bindings: {}
-    layout_properties: {grid_position: 'NOWOPA,MGKQRL'}
+    layout_properties: {grid_position: 'NOWOPA,HVWWLZ'}
     name: DiceBox
-    properties: {background: '', border: '', height: 500px, visible: true, width: null}
+    properties: {background: '', border: '', height: 480px, visible: true, width: 480}
     type: XYPanel
   data_bindings:
   - {code: 'self.item[''background'']', property: background, writeback: false}

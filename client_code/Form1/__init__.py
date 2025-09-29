@@ -10,11 +10,6 @@ class Form1(Form1Template):
 
     # Any code you write here will run before the form opens.
     self.dice = None
-    image_asset = f"{anvil.server.get_app_origin()}/_/theme/DiceTray.png"
-
-    # Set the background property of the XYPanel
-    self.DiceBox.background = image_asset
-    self.content_panel.background = image_asset
     
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -43,8 +38,7 @@ class Form1(Form1Template):
       image_asset = f"{anvil.server.get_app_origin()}/_/theme/DiceTray.png"
   
       # Set the background property of the XYPanel
-      self.DiceBox.background = image_asset
-      self.content_panel.background = image_asset
+      # self.DiceBox.background = image_asset
   
       anvil.js.await_promise(self.dice.init())
     
